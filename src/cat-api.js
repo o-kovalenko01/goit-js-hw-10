@@ -21,7 +21,7 @@ export const fetchBreeds = async () => {
             `https://api.thecatapi.com/v1/images/search?breed_ids=${newVal[0].id}`
           );
           loader.style.display = 'none';
-          info.style.display = 'flex';
+          info.style.display = 'block';
 
           info.innerHTML = `<div class = 'image'><img src="${result.data[0].url}" alt=""></div><div><h2>${result.data[0].breeds[0].name}</h2><p>${result.data[0].breeds[0].description}</p><p><b>Temperament: </b>${result.data[0].breeds[0].temperament}</p></div>`;
         } catch (e) {
