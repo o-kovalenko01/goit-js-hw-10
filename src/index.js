@@ -1,5 +1,3 @@
-import SlimSelect from 'slim-select';
-import Notiflix from 'notiflix';
 import axios from 'axios';
 import { fetchBreeds } from './cat-api';
 

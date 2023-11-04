@@ -1,3 +1,7 @@
+import SlimSelect from 'slim-select';
+import Notiflix from 'notiflix';
+import axios from 'axios';
+
 export const fetchBreeds = async () => {
   const select = new SlimSelect({
     select: '#breed-select',
